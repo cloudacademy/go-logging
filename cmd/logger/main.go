@@ -1,6 +1,9 @@
 package main
 
-import "log"
+import (
+	"fmt"
+	"log"
+)
 
 type blah struct {
 	name  string
@@ -8,6 +11,8 @@ type blah struct {
 }
 
 func main() {
+	fmt.Println("Logger")
+
 	blah := blah{
 		name:  "CloudAcademy",
 		count: 30,
@@ -21,4 +26,6 @@ func main() {
 	log.Println("CloudAcademy logging event...")
 	log.Printf("data points: %s %d", name, length)
 	log.Printf("blah struct instance -> %#v", blah)
+
+	fmt.Println()
 }

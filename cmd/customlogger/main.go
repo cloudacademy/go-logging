@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
 )
@@ -32,6 +33,8 @@ type blah struct {
 }
 
 func main() {
+	fmt.Println("CustomLogger")
+
 	blah := blah{
 		name:  "CloudAcademy",
 		count: 30,
@@ -43,4 +46,5 @@ func main() {
 	WarningLogger.Printf("blah struct instance -> %#v", blah)
 
 	ErrorLogger.Println("major blah blah detected!!")
+	fmt.Println()
 }
